@@ -1,5 +1,8 @@
+import { AuthService} from './auth.service';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { User} from '../models/user.model';
+
 
 @Component({
   selector: 'app-sign-up',
@@ -8,14 +11,22 @@ import { NgForm } from '@angular/forms';
 })
 export class SignUpComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
 
   }
 
   onSignUp(form: NgForm ){
-    console.log(form)
+    let userData: User = {
+      name: form.value.name,
+      email: form.value.email,
+      password: form.value.password
+    };
+
+    this.authService.signUp(userData).subscribe(responseData => {
+      //Redirect user to main page!
+    });
   }
 
 }

@@ -1,10 +1,20 @@
-<form class="container sign-in-form">
+<form class="container sign-in-form" (ngSubmit)="onSignIn(f)" #f="ngForm">
 
     <img src="../../assets/myBlogLogo.png" class="mb-3" alt="logo" width="120" height="120">
     <h3 class="mb-3">Please sign in</h3>
 
-    <input type="email" class="form-control mb-1" placeholder="Email address">
-    <input type="password" class="form-control mb-2" placeholder="Password">
+    <input 
+      type="email"
+      class="form-control mb-1"
+      placeholder="Email address"
+      ngModel
+      name="email">
+    <input 
+      type="password"
+      class="form-control mb-2"
+      placeholder="Password"
+      ngModel
+      name="password">
 
     <div class="checkbox mb-2">
       <label >
@@ -12,7 +22,7 @@
       </label>
     </div>
    
-    <button type="button" class="btn btn-primary btn-lg btn-block">Sign in</button>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
     
     <div class="row no-gutters mt-3">
       <div class="col-7" style="text-align: left;">
