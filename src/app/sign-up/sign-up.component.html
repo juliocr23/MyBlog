@@ -1,0 +1,30 @@
+
+<form class="container sign-up-form" (ngSubmit)="onSignUp(f)" #f="ngForm">
+
+  <img src="../../assets/myBlogLogo.png" class="mb-3" alt="logo" width="120" height="120">
+  <h3 class="mb-3">Sign up</h3>
+
+  <input 
+    type="text"
+    class="form-control mb-1"
+    placeholder="Name"
+    ngModel
+    name="name">
+
+  <input 
+    type="email" 
+    class="form-control mb-1"
+    placeholder="Email address"
+    ngModel
+    name="email">
+  <input 
+    type="password"
+    class="form-control mb-2"
+    placeholder="Password"
+    ngModel
+    name="password">
+ 
+  <button type="submit" class="btn btn-primary btn-lg btn-block">Sign up</button>
+  
+ 
+</form>

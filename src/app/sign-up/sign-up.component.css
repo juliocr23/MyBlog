@@ -1,0 +1,22 @@
+.sign-up-form {
+    text-align: center;
+    margin-top: 12vw;
+    max-width: 300px;
+  
+}
+
+.btn {
+    background-image: linear-gradient(#FF2600,#FF9300);
+}
+
+.link{
+    color: gray;
+    cursor: pointer;
+    font-size: 0.8rem;
+   
+}
+
+a:hover {
+    color: #FF2600;
+}
+

@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+    font-family: paintFontReg;
+    src: url(./assets/fonts/animeace2_reg.ttf);
+  }
+
+  @font-face {
+    font-family: paintFontRegBold;
+    src: url(./assets/fonts/animeace2_bld.ttf);
+  }
+
+  @font-face {
+    font-family: paintFontRegItal;
+    src: url(./assets/fonts/animeace2_ital.ttf);
+  }
+
+  body {
+    width: 100%;
+    background-color: #b2ebf2;
+    /* font-family: paintFontReg; */
+}
