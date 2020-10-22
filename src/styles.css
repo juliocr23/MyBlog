@@ -18,6 +18,8 @@
 
   body {
     width: 100%;
-    background-color: #b2ebf2;
+    /* background-color: #b2ebf2; */
+    background-color: #343a40;
+    color: white;;
     /* font-family: paintFontReg; */
 }

@@ -1,0 +1,30 @@
+.blog {
+    text-align: left;
+   
+}
+.profile-img{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+}
+
+.username, .date {
+    background: -webkit-linear-gradient(white, #FF9300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.name {
+    font-weight: bolder;
+}
+
+.btn {
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(101, 119, 134);
+}
+hr{
+    background-color: gray;
+}
+
